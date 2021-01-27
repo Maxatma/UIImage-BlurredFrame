@@ -14,7 +14,11 @@ Pod::Spec.new do |s|
   s.author       = { "Adrian Gonzalez" => "bernardogzzf@gmail.com" }
 
   s.platform     = :ios
-
+  s.ios.deployment_target = "9.0"
+  s.tvos.deployment_target = "9.0"
+  s.osx.deployment_target = "10.10"
+  s.watchos.deployment_target = '6.0'
+  
   s.source       = { :git => "https://github.com/Adrian2112/UIImage-BlurredFrame.git", :tag => "0.0.4" }
 
   s.source_files  = '*.{h,m}'
